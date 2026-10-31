@@ -1,0 +1,30 @@
+{
+	"bundle": {
+		"createUpdaterArtifacts": true
+	},
+	"build": {
+		"features": [
+			"updater"
+		]
+	},
+	"app": {
+		"security": {
+			"capabilities": [
+				"core",
+				"plugins",
+				"updater"
+			]
+		}
+	},
+	"plugins": {
+		"updater": {
+			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDdFQjY4NzdBMDIzREJCRDMKUldUVHV6MENlb2UyZm5nd2hCOThEUTR5K0MxSjhLUytmU2dMMDdkcHhVWUM3N1BjMkhkSVZpVFcK",
+			"endpoints": [
+				"https://github.com/rsu-network/plainblock/releases/latest/download/latest.json"
+			],
+			"windows": {
+				"installMode": "passive"
+			}
+		}
+	}
+}
